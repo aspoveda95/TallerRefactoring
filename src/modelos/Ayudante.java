@@ -3,6 +3,7 @@ package modelos;
 import java.util.ArrayList;
 
 public class Ayudante {
+    Persona per;
     protected Estudiante est;
     public ArrayList<Paralelo> paralelos;
     
@@ -19,11 +20,11 @@ public class Ayudante {
 
     //Getters y setters se delegan en objeto estudiante para no duplicar código
     public String getNombre() {
-        return est.getNombre();
+        return per.getNombre();
     }
 
     public String getApellido() {
-        return est.getApellido();
+        return per.getApellido();
     }
 
     //Los paralelos se añaden/eliminan directamente del Arraylist de paralelos

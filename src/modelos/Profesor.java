@@ -9,10 +9,6 @@ public class Profesor extends Persona{
     protected double BonoFijo;
     protected ArrayList<Paralelo> paralelos;
 
-    public Profesor(String nombre, String apellido, int edad, String direccion, String telefono) {
-        super(nombre, apellido, edad, direccion, telefono);
-    }
-
     public Profesor(String codigo, ArrayList<Paralelo> paralelos, String nombre, String apellido, int edad, String direccion, String telefono) {
         super(nombre, apellido, edad, direccion, telefono);
         this.codigo = codigo;
@@ -28,9 +24,6 @@ public class Profesor extends Persona{
         this.paralelos = paralelos;
     }
     
-
-    
-     
     
     public void anadirParalelos(Paralelo p){
         paralelos.add(p);

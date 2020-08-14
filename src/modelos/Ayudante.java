@@ -2,37 +2,16 @@ package modelos;
 
 import java.util.ArrayList;
 
-public class Ayudante {
-    Persona per;
-    protected Estudiante est;
-    public ArrayList<Paralelo> paralelos;
+public class Ayudante extends Estudiante{
+    protected ArrayList<Paralelo> paralelosAyudante;
     
-    Ayudante(Estudiante e){
-    	est = e;
-    }
-    public String getMatricula() {
-        return est.getMatricula();
+    public Ayudante(String matricula, String facultad, ArrayList<Paralelo> paralelos, String nombre, String apellido, int edad, String direccion, String telefono) {
+        super(matricula, facultad, paralelos, nombre, apellido, edad, direccion, telefono);
+        this.paralelosAyudante = new ArrayList<Paralelo>();
     }
 
-    public void setMatricula(String matricula) {
-        est.setMatricula(matricula);
-    }
-
-    //Getters y setters se delegan en objeto estudiante para no duplicar código
-    public String getNombre() {
-        return per.getNombre();
-    }
-
-    public String getApellido() {
-        return per.getApellido();
-    }
-
-    //Los paralelos se añaden/eliminan directamente del Arraylist de paralelos
-
-
-    
     public void ImprimirParalelosDelAyudante(){
-        for(Paralelo par:paralelos){
+        for(Paralelo par:paralelosAyudante){
             //Muestra la info general de cada paralelo
         }
     }

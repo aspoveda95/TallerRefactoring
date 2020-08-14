@@ -8,10 +8,6 @@ public class Estudiante extends Persona{
     public String facultad;    
     public ArrayList<Paralelo> paralelos;
 
-    public Estudiante(String nombre, String apellido, int edad, String direccion, String telefono) {
-        super(nombre, apellido, edad, direccion, telefono);
-    }
-
     public Estudiante(String matricula, String facultad, ArrayList<Paralelo> paralelos, String nombre, String apellido, int edad, String direccion, String telefono) {
         super(nombre, apellido, edad, direccion, telefono);
         this.matricula = matricula;
@@ -19,8 +15,6 @@ public class Estudiante extends Persona{
         this.paralelos = paralelos;
     }
  
-    
-    
     //Getter y setter de Matricula
 
     public String getMatricula() {

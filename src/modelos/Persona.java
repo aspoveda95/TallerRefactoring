@@ -10,11 +10,20 @@ package modelos;
  * @author darin
  */
 public class Persona {
-    public String nombre;
-    public String apellido;
-    public int edad;    
-    public String direccion;
-    public String telefono;
+    protected String nombre;
+    protected String apellido;
+    protected int edad;    
+    protected String direccion;
+    protected String telefono;
+
+    public Persona(String nombre, String apellido, int edad, String direccion, String telefono) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
+    
     
     public String getNombre() {
         return nombre;
